@@ -1,0 +1,12 @@
+:root {
+    --btboj_statistics_font_size: 0;
+    --btboj_problem_tag_font_size: 0;
+}
+
+#problem-info td:nth-child(n + 3) {
+    font-size: var(--btboj_statistics_font_size);
+}
+
+#problem_tags>ul {
+    font-size: var(--btboj_problem_tag_font_size);
+}

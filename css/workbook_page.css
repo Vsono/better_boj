@@ -1,0 +1,7 @@
+:root {
+    --btboj_statistics_font_size: 0;
+}
+
+table.table-striped.table-bordered td:nth-child(n + 4) {
+    font-size: var(--btboj_statistics_font_size);
+}

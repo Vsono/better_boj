@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Better BOJ",
+  "description": "",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html"
+  },
+  "content_scripts": [
+    {
+      "css": ["css/problem_page.css"],
+      "js": ["scripts/problem_page.js"],
+      "matches": [
+        "https://www.acmicpc.net/problem/*"
+      ],
+      "exclude_matches": [
+        "https://www.acmicpc.net/problem/status*",
+        "https://www.acmicpc.net/problem/history*"
+      ]
+    },
+    
+    {
+      "css": ["css/category_page.css"],
+      "js": ["scripts/category_page.js"],
+      "matches": [
+        "https://www.acmicpc.net/category/detail/*"
+      ]
+    },
+    
+    {
+      "css": ["css/workbook_page.css"],
+      "js": ["scripts/workbook_page.js"],
+      "matches": [
+        "https://www.acmicpc.net/workbook/view/*"
+      ]
+    }
+  ]
+}
